@@ -40,30 +40,6 @@ The models leverage advanced deep learning techniques to detect subtle artifacts
 ```bash
 git clone https://github.com/yourorg/deepfake-detection.git
 cd deepfake-detection
-pip install -r requirements.txt
-```
-
-## Usage
-
-### Basic Detection
-
-```python
-from detectors import DeepfakeDetector
-
-# Initialize detector
-detector = DeepfakeDetector(model_name='xceptionnet')
-
-# Detect fake image
-result = detector.detect('sample_image.jpg')
-print(f"Fake probability: {result['score']:.2%}")
-```
-
-### Batch Processing
-
-```python
-# Process video file frame-by-frame
-results = detector.process_video('input_video.mp4', 
-                               output_file='detection_results.json')
 ```
 
 ## Performance
@@ -84,17 +60,6 @@ Pre-trained on:
 - DeepfakeTIMIT (audio)
 - ASVspoof 2019 (audio)
 
-## Training
-
-To train custom models:
-```bash
-python train.py --model xceptionnet --data_path /path/to/dataset --epochs 50
-```
-
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
 ## License
 
 This project is licensed under the Apache 2.0 License - see [LICENSE](LICENSE) for details.
@@ -105,6 +70,4 @@ This project is licensed under the Apache 2.0 License - see [LICENSE](LICENSE) f
 2. Dolhansky et al. "The Deepfake Detection Challenge Dataset" (2020)
 3. Li et al. "Face X-ray for More General Face Forgery Detection" (CVPR 2020)
 
-## Contact
 
-For questions or support: deepfake-detection@yourorg.com# deepfake_ml_model
